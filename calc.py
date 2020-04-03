@@ -7,6 +7,19 @@ Please type the math operation you would like to complete:
 / for division
 ''')
 
+#A function to ask user if they want to use the calculator again
+def again():
+    calc_again = input(''' Do you want to calculate again? Type Y for Yes or N for No ''')
+
+    if calc_again == 'Y':
+        calculate()
+    elif calc_again == 'N':
+        print("see you later.")
+    else:
+        again()
+        
+calculate()
+
 num1=int(input('Enter your first number:'))
 num2=int(input('Enter your second number:'))
 
