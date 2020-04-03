@@ -1,4 +1,5 @@
-operation = input('''
+def calculate():
+    operation = input('''
 Please type the math operation you would like to complete:
 + for addition
 - for substraction
@@ -27,3 +28,5 @@ elif operation == '/':#division
     
 else:
     print('Please enter a valid operator')
+
+calculate()
