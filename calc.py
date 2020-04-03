@@ -11,13 +11,13 @@ Please type the math operation you would like to complete:
 def again():
     calc_again = input(''' Do you want to calculate again? Type Y for Yes or N for No ''')
 
-    if calc_again == 'Y':
+    if calc_again.upper() == 'Y': # To accept both y and Y as a yes
         calculate()
-    elif calc_again == 'N':
+    elif calc_again.upper() == 'N': # To accept both n and N as a no
         print("see you later.")
     else:
         again()
-        
+
 calculate()
 
 num1=int(input('Enter your first number:'))
