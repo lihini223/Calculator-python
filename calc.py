@@ -8,6 +8,8 @@ Please type the math operation you would like to complete:
 - for substraction
 * for multiplication
 / for division
+** for power
+% for modulo
 ''')
 
     num1=int(input('Enter your first number:'))
@@ -28,7 +30,14 @@ Please type the math operation you would like to complete:
     elif operation == '/':#division
         print('{} / {} ='.format(num1, num2))
         print(num1/num2)
-    
+
+    elif operation == '**':#power
+        print('{} ** {} ='.format(num1, num2))
+        print(pow(num1,num2))
+
+    elif operation == '%':#modulo
+        print('{} % {} ='.format(num1, num2))
+        print(num1%num2)
     else:
         print('Please enter a valid operator')
 
