@@ -12,7 +12,7 @@ Please type the math operation you would like to complete:
 % for modulo
 ''')
 
-    #num1=int(input('Enter your first number:'))
+    num1=int(input('Enter your first number:'))
     num2=int(input('Enter your second number:'))
 
     if operation == '+':#addition
